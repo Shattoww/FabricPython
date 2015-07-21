@@ -2,7 +2,7 @@ import sys
 from fabric.api import *
 from functools import partial
 
-
+env.colorize_errors = True
 env.skip_bad_hosts = True
 def read_hosts():
     env.hosts = open('host_files', 'r').readlines()
